@@ -32,6 +32,9 @@ fn main() {
         Some(s) => assert_eq!(s, 10),
         None => unreachable!(),
     }
+    if let Some(s) = o1 {
+        assert_eq!(s, 10);
+    }
 }
 
 fn hello(){
