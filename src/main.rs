@@ -25,7 +25,13 @@ fn main() {
     let mut b1 = Box::new(t1);
     (*b1).0 += 1;
     assert_eq!(*b1, (4,"bur".to_string()));
-
+    let aa1 = ['a','b'];
+    assert_eq!(aa1.get(0), Some(&'a'));
+    let mut o1 = Some(10);
+    match o1 {
+        Some(s) => assert_eq!(s, 10),
+        None => unreachable!(),
+    }
 }
 
 fn hello(){
