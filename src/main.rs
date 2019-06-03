@@ -35,6 +35,7 @@ fn main() {
     if let Some(s) = o1 {
         assert_eq!(s, 10);
     }
+    // 5-2-7から
 }
 
 fn hello(){
