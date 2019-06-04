@@ -43,6 +43,7 @@ fn main() {
     };
     let Polygon {vertexes: vx, ..}  = triangle;
     assert_eq!(3, vx.len());
+    // 6から
 }
 
 struct Polygon {
