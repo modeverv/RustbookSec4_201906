@@ -36,6 +36,19 @@ fn main() {
         assert_eq!(s, 10);
     }
     // 5-2-7から
+    let triangle = Polygon{
+        vertexes: vec![(0,0),(3,0),(2,2)],
+        fill: (255,255,255),
+        stroke_width: 1,
+    };
+    let Polygon {vertexes: vx, ..}  = triangle;
+    assert_eq!(3, vx.len());
+}
+
+struct Polygon {
+    vertexes:  Vec<(i32,i32)>,
+    stroke_width: u8,
+    fill: (u8,u8,u8)
 }
 
 fn hello(){
